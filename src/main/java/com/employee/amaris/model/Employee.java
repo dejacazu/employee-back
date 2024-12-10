@@ -2,8 +2,11 @@ package com.employee.amaris.model;
 
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Getter;
+import lombok.Setter;
 
-
+@Getter
+@Setter
 public class Employee {
     @JsonProperty("id")
     String id;
@@ -17,12 +20,4 @@ public class Employee {
     String image;
     float annualSalary;
 
-
-    public float getSalary() {
-        return this.salary;
-    }
-
-    public void setAnnualSalary(float salary) {
-        this.salary = salary;
-    }
 }
